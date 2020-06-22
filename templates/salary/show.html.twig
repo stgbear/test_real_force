@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div>Name: {{ employee.name }}</div>
+<div>Gross salary: {{ salary.salary }}</div>
+<div>Tax amount: {{ salary.tax }}</div>
+<div>Bonus amount: {{ salary.bonus }}</div>
+<div>Deduction amount: {{ salary.deduction }}</div>
+<div>Net salary {{ netSalaryValue }}</div>
+<div><a href="{{ url }}">New calculation</a></div>
+{% endblock %}
