@@ -1,6 +1,6 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\SalaryController::calculate
 
 salary_calculate:
     path: /salary/calculate

@@ -22,17 +22,18 @@ class EmployeeType extends AbstractType
                     'label' => 'Name:'
                 ]
             )
-            ->add('age', IntegerType::class)
+            ->add(
+                'age',
+                IntegerType::class,
+                [
+                    'label' => 'Age:'
+                ]
+            )
             ->add(
                 'childrenCnt',
                 IntegerType::class,
                 [
                     'label' => 'Children:'
-                ]
-            )
-            ->add('hasCompanyCar', CheckboxType::class,
-                [
-                    'required' => false
                 ]
             )
             ->add(
@@ -41,6 +42,12 @@ class EmployeeType extends AbstractType
                 [
                     'label' => 'Salary:',
                     'currency' => null
+                ]
+            )
+            ->add('hasCompanyCar', CheckboxType::class,
+                [
+                    'label' => 'Has company car',
+                    'required' => false
                 ]
             )
             ->add('calculate', SubmitType::class)
