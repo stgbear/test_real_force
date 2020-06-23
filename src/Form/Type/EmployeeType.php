@@ -19,7 +19,7 @@ class EmployeeType extends AbstractType
                 'name',
                 TextType::class,
                 [
-                    'label' => 'Name: '
+                    'label' => 'Name:'
                 ]
             )
             ->add('age', IntegerType::class)

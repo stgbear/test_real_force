@@ -11,7 +11,7 @@ class DeductionService
      * 
      * @return float
      */
-    public function getCarDeduction(Employee $employee): float
+    public function getCarDeductionValue(Employee $employee): float
     {
         return $employee->getHasCompanyCar() ? 500.0 : 0.0;
     }

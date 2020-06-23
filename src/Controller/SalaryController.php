@@ -21,6 +21,7 @@ class SalaryController extends AbstractController
             $employee = $form->getData();
             $salary = $salaryService->getSalary($employee);
             $netSalaryValue = $salaryService->getNetSalaryValue($salary);
+
             return $this->render(
                 'salary/show.html.twig',
                 [
